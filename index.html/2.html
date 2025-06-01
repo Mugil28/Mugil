@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guides For Passion</title>
+
+  <!-- Racing Font: Audiowide -->
+  <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+
+  <!-- AOS Animation CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+
+  <style>
+    html {
+      margin: 0;
+      background-color: #000;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+
+    .hero-section {
+      margin: 0;
+      padding: 0;
+    }
+
+    .image-strip {
+      display: flex;
+      width: 100vw;
+      height: 300px;
+      overflow: hidden;
+    }
+
+    .image-strip img {
+      width: 25%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .title {
+      margin-top: 20px;
+      font-size: 36px;
+      font-family: 'Audiowide', sans-serif;
+      color: #ff0000;
+    }
+
+    .line-container {
+      position: relative;
+      width: 80%;
+      margin: 0 auto;
+      height: 220px;
+    }
+
+    .line {
+      position: absolute;
+      top: 90px;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background-color: #ff0000;
+      z-index: 1;
+    }
+
+    .circle-link {
+      position: absolute;
+      top: 15px;
+      display: block;
+      width: 150px;
+      height: 150px;
+      z-index: 2;
+      transition: transform 0.1s ease;
+      text-decoration: none;
+      color: white;
+    }
+
+    .circle-link:active {
+      transform: translateY(5px);
+    }
+
+    .circle-link:nth-child(2) { left: 0%; }
+    .circle-link:nth-child(3) { left: 30%; }
+    .circle-link:nth-child(4) { left: 59%; }
+    .circle-link:nth-child(5) { left: 100%; transform: translateX(-100%); }
+
+    .circle-link img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .tooltip-text {
+      position: absolute;
+      top: 160px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 16px;
+      background: rgba(255, 0, 0, 0.8);
+      padding: 6px 12px;
+      border-radius: 10px;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      pointer-events: none;
+      font-family: 'Audiowide', sans-serif;
+      white-space: nowrap;
+    }
+
+    .circle-link:hover .tooltip-text,
+    .circle-link:focus .tooltip-text {
+      opacity: 1;
+    }
+
+    @media (max-width: 768px) {
+      .title {
+        font-size: 7vw;
+      }
+
+      .custom-button {
+        font-size: 1rem;
+        padding: 10px 20px;
+      }
+
+      .remaining-page h2 {
+        font-size: 1.5rem;
+      }
+
+      .remaining-page p {
+        font-size: 0.95rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .hero-section {
+        padding: 10vh 4vw;
+      }
+
+      .title {
+        font-size: 8vw;
+      }
+
+      .custom-button {
+        width: 100%;
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <section class="hero-section">
+    <div class="image-strip">
+      <img src="racing-2392172 (1).jpg" alt="Image 1">
+      <img src="street-3184900 (1).jpg" alt="Image 2">
+      <img src="car-racing-4460629 (1).jpg" alt="Image 3">
+      <img src="nascar-70391_1920 (1).jpg" alt="Image 4">
+    </div>
+    <h1 class="title">GUIDES FOR YOU</h1>
+  </section>
+
+  <div class="remaining-page">
+    <h2>Choose Your Track</h2>
+
+    <div class="line-container">
+      <div class="line"></div>
+
+      <a href="3.html" class="circle-link">
+        <img src="drag-5511534 (1).jpg" alt="Circle 1">
+        <div class="tooltip-text">Drag</div>
+      </a>
+
+      <a href="4.html" class="circle-link">
+        <img src="bolid-958575 (1).jpg" alt="Circle 2">
+        <div class="tooltip-text">F1</div>
+      </a>
+
+      <a href="5.html" class="circle-link">
+        <img src="race-car-7624025 (1).jpg" alt="Circle 3">
+        <div class="tooltip-text">Touring</div>
+      </a>
+
+      <a href="6.html" class="circle-link">
+        <img src="race-track-3336538 (1).jpg" alt="Circle 4">
+        <div class="tooltip-text">NASCAR</div>
+      </a>
+
+    </div>
+  </div>
+
+  <script>
+    document.querySelectorAll('.circle-link').forEach(link => {
+      link.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = this;
+        target.style.transform = 'translateY(5px)';
+        setTimeout(() => {
+          window.location.href = target.href;
+        }, 150);
+      });
+    });
+  </script>
+
+  <footer style="background-color:#111; color:#ccc; text-align:center; padding:20px 10px; font-size:14px; font-family:'Audiowide', sans-serif; border-top:2px solid #ff0000;">
+    <p>&copy; 2025 <span style="color:#ff0000; font-weight:bold;">SpeedZone Guides</span> | Built for racers, by racers.</p>
+  </footer>
+
+</body>
+</html>

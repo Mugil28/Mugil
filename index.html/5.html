@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Touring Guides</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Open+Sans&display=swap" rel="stylesheet">
+
+  <!-- AOS Animation CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+
+  <style>
+    html {
+      background-color: #000;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      text-align: center;
+      background-image: url('car-9624005 (1).jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    .title {
+      margin-top: 20px;
+      font-size: 36px;
+      font-family: 'Audiowide', sans-serif;
+      color: #ff0000;
+    }
+
+    .remaining-page {
+      background-color: rgba(26, 26, 26, 0.85);
+      padding: 60px 20px;
+      color: #ffffff;
+      flex-grow: 1;
+    }
+
+    .remaining-page h2 {
+      font-size: 30px;
+      font-family: 'Audiowide', sans-serif;
+      margin-bottom: 20px;
+    }
+
+    h3 {
+      font-family: 'Audiowide', sans-serif;
+      font-size: 22px;
+      color: #ff0000;
+      margin-top: 30px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 1.6;
+      color: #f0f0f0;
+      text-align: left;
+      max-width: 800px;
+      margin: 10px auto;
+    }
+
+    .line-container {
+      width: 80%;
+      margin: 30px auto 0;
+      height: 4px;
+      background-color: #ff0000;
+    }
+
+    footer {
+      background-color: #111;
+      color: #ccc;
+      text-align: center;
+      padding: 20px 10px;
+      font-size: 14px;
+      font-family: 'Audiowide', sans-serif;
+      border-top: 2px solid #ff0000;
+    }
+
+    footer span {
+      color: #ff0000;
+      font-weight: bold;
+    }
+
+    /* Floating Menu Styles */
+    .floating-menu {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      z-index: 9999;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+    }
+
+    #main-button {
+      background-color: #ff0000;
+      color: white;
+      border: none;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      font-family: 'Audiowide', sans-serif;
+      font-size: 12px;
+      box-shadow: 0 4px 12px rgba(255, 0, 0, 0.4);
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+
+    #main-button:hover {
+      background-color: #cc0000;
+      transform: scale(1.1);
+    }
+
+    #menu-options {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 10px;
+      opacity: 0;
+      transform: translateY(10px);
+      transition: opacity 0.3s ease, transform 0.3s ease;
+      pointer-events: none;
+    }
+
+    #menu-options a {
+      background-color: #ff0000;
+      color: white;
+      padding: 10px 16px;
+      margin-bottom: 8px;
+      border-radius: 25px;
+      font-family: 'Audiowide', sans-serif;
+      font-size: 14px;
+      text-decoration: none;
+      box-shadow: 0 4px 12px rgba(255, 0, 0, 0.4);
+      transition: background-color 0.3s ease;
+    }
+
+    #menu-options a:hover {
+      background-color: #cc0000;
+    }
+
+    .floating-menu.show #menu-options {
+      opacity: 1;
+      transform: translateY(0);
+      pointer-events: auto;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      .title {
+        font-size: 7vw;
+      }
+
+      .remaining-page h2 {
+        font-size: 1.5rem;
+      }
+
+      .remaining-page p {
+        font-size: 0.95rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .title {
+        font-size: 8vw;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <section class="hero-section">
+    <h1 class="title">TOURING GUIDES FOR YOU</h1>
+  </section>
+
+  <div class="remaining-page">
+    <h2 data-aos="fade-up">
+      Becoming a car touring racer requires a mix of driving skill, strategic planning, networking, and dedication. Here’s a step-by-step guide to help you get started:
+    </h2>
+
+    <h3 data-aos="fade-up">🏁 1. Understand Touring Car Racing</h3>
+    <p data-aos="fade-up">It involves modified street-legal cars on closed circuits (e.g., WTCR, BTCC, TCR). It’s intense, strategy-driven, and physical.</p>
+
+    <h3 data-aos="fade-up">🔍 2. Research the Sport Thoroughly</h3>
+    <p data-aos="fade-up">Watch events like BTCC, TCR Europe, and TC America.</p>
+    <p data-aos="fade-up">Study race formats, car rules, tire strategies, penalties, etc.</p>
+    <p data-aos="fade-up">Learn about sprint vs. endurance formats.</p>
+
+    <h3 data-aos="fade-up">📍 3. Visit Local Tracks and Events</h3>
+    <p data-aos="fade-up">Talk to racers, crew members, and officials.</p>
+    <p data-aos="fade-up">Explore entry-level regional series options.</p>
+
+    <h3 data-aos="fade-up">🚗 4. Get a Driver’s License</h3>
+    <p data-aos="fade-up">A regular road license is usually needed before applying for a racing license.</p>
+
+    <h3 data-aos="fade-up">🏫 5. Enroll in a Racing School</h3>
+    <p data-aos="fade-up">Recommended schools: Skip Barber (USA), BMW Driving Experience (EU), Silverstone (UK).</p>
+
+    <h3 data-aos="fade-up">🪪 6. Obtain a Racing License</h3>
+    <p data-aos="fade-up">Apply through your motorsport body (e.g., SCCA, MSUK, CAMS). May require a course, test, and race evaluation.</p>
+
+    <h3 data-aos="fade-up">🏎️ 7. Choose an Entry-Level Series</h3>
+    <p data-aos="fade-up">Options include Club racing (SCCA/NASA), TCR regional/national, Mazda MX-5 Cup, and amateur endurance races.</p>
+
+    <h3 data-aos="fade-up">🧰 8. Get a Suitable Car or Join a Team</h3>
+    <p data-aos="fade-up"><strong>Option A: Buy or Build</strong> – Make sure it’s class-approved and meets safety specs (roll cage, harness, extinguisher).</p>
+    <p data-aos="fade-up"><strong>Option B: Rent or Join</strong> – Join a team as crew or rent a ready-made race car (arrive-and-drive programs).</p>
+
+    <h3 data-aos="fade-up">🥽 9. Purchase Required Gear</h3>
+    <p data-aos="fade-up">Must-have FIA/Snell-approved gear: racing suit, full-face helmet, fireproof gloves/shoes, and HANS device.</p>
+
+    <h3 data-aos="fade-up">🧪 10. Test and Practice</h3>
+    <p data-aos="fade-up">Attend track days to practice racing lines, braking, throttle control, and basic car setup (tires, suspension).</p>
+
+    <h3 data-aos="fade-up">🏆 11. Enter Your First Race</h3>
+    <p data-aos="fade-up">Join amateur/club-level races. Focus on finishing cleanly, not winning. Learn racecraft.</p>
+
+    <h3 data-aos="fade-up">🔧 12. Analyze and Improve</h3>
+    <p data-aos="fade-up">Use onboard footage and lap data to evaluate your performance. Seek feedback from experienced racers.</p>
+
+    <h3 data-aos="fade-up">🤝 13. Network in the Racing Community</h3>
+    <p data-aos="fade-up">Engage in forums, attend events, and connect with other drivers. Networking can lead to teams, mentors, and sponsors.</p>
+
+    <h3 data-aos="fade-up">💰 14. Seek Sponsorship (Optional)</h3>
+    <p data-aos="fade-up">Create a basic portfolio (bio, results, social links). Approach small businesses and be professional in your pitch.</p>
+
+    <h3 data-aos="fade-up">🚀 15. Move Up the Ladder</h3>
+    <p data-aos="fade-up">Gain experience, apply for an international license, compete in national TCR or BTCC series, and pursue pro team opportunities.</p>
+
+    <div class="line-container"></div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 <span>SpeedZone Guides</span> | Built for racers, by racers.</p>
+  </footer>
+
+  <!-- Floating Menu -->
+  <div class="floating-menu">
+    <button id="main-button">Go to</button>
+    <div id="menu-options">
+      <a href="2.html"> Guides</a>
+      <a href="7.html"> Inspiration</a>
+    </div>
+  </div>
+
+  <!-- AOS Animation Script -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+
+    const mainButton = document.getElementById("main-button");
+    const floatingMenu = document.querySelector(".floating-menu");
+
+    mainButton.addEventListener("click", () => {
+      floatingMenu.classList.toggle("show");
+    });
+
+    document.addEventListener("click", (event) => {
+      if (!floatingMenu.contains(event.target)) {
+        floatingMenu.classList.remove("show");
+      }
+    });
+  </script>
+</body>
+</html>

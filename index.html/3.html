@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Drag Guides</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Open+Sans&display=swap" rel="stylesheet" />
+
+  <!-- AOS CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet" />
+
+  <style>
+    html {
+      margin: 0;
+      background-color: #000;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Open Sans', sans-serif;
+      text-align: center;
+      background-image: url('race-car-814196 (1).jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    .hero-section {
+      margin: 0;
+      padding: 0;
+    }
+
+    .title {
+      margin-top: 20px;
+      font-size: 36px;
+      font-family: 'Audiowide', sans-serif;
+      color: #ff0000;
+    }
+
+    .remaining-page {
+      background-color: rgba(26, 26, 26, 0.85);
+      padding: 60px 20px;
+      color: #ffffff;
+      flex-grow: 1;
+    }
+
+    .remaining-page h2 {
+      font-size: 30px;
+      font-family: 'Audiowide', sans-serif;
+      margin-bottom: 20px;
+    }
+
+    h3 {
+      font-family: 'Audiowide', sans-serif;
+      font-size: 22px;
+      color: #ff0000;
+      margin-top: 30px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+      color: #f0f0f0;
+      text-align: left;
+      margin: 10px auto;
+      max-width: 800px;
+    }
+
+    .line-container {
+      position: relative;
+      width: 80%;
+      margin: 30px auto 0 auto;
+      height: 4px;
+      background-color: #ff0000;
+    }
+
+    footer {
+      background-color: #111;
+      color: #ccc;
+      text-align: center;
+      padding: 20px 10px;
+      font-size: 14px;
+      font-family: 'Audiowide', sans-serif;
+      border-top: 2px solid #ff0000;
+    }
+
+    footer span {
+      color: #ff0000;
+      font-weight: bold;
+    }
+
+    @media (max-width: 600px) {
+      h3 {
+        font-size: 18px;
+      }
+
+      p {
+        font-size: 14px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .title {
+        font-size: 7vw;
+      }
+
+      .custom-button {
+        font-size: 1rem;
+        padding: 10px 20px;
+      }
+
+      .remaining-page h2 {
+        font-size: 1.5rem;
+      }
+
+      .remaining-page p {
+        font-size: 0.95rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .hero-section {
+        padding: 10vh 4vw;
+      }
+
+      .title {
+        font-size: 8vw;
+      }
+
+      .custom-button {
+        width: 100%;
+        font-size: 1rem;
+      }
+    }
+
+    /* Floating Go To Button */
+    .floating-menu {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      z-index: 9999;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+    }
+
+    #main-button {
+      background-color: #ff0000;
+      color: white;
+      border: none;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      font-family: 'Audiowide', sans-serif;
+      font-size: 12px;
+      box-shadow: 0 4px 12px rgba(255, 0, 0, 0.4);
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+
+    #main-button:hover {
+      background-color: #cc0000;
+      transform: scale(1.1);
+    }
+
+    #menu-options {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 10px;
+      opacity: 0;
+      transform: translateY(10px);
+      transition: opacity 0.3s ease, transform 0.3s ease;
+      pointer-events: none;
+    }
+
+    #menu-options a {
+      background-color: #ff0000;
+      color: white;
+      padding: 10px 16px;
+      margin-bottom: 8px;
+      border-radius: 25px;
+      font-family: 'Audiowide', sans-serif;
+      font-size: 14px;
+      text-decoration: none;
+      box-shadow: 0 4px 12px rgba(255, 0, 0, 0.4);
+      transition: background-color 0.3s ease;
+    }
+
+    #menu-options a:hover {
+      background-color: #cc0000;
+    }
+
+    .floating-menu.show #menu-options {
+      opacity: 1;
+      transform: translateY(0);
+      pointer-events: auto;
+    }
+  </style>
+</head>
+<body>
+  <section class="hero-section">
+    <h1 class="title">DRAG GUIDES FOR YOU</h1>
+  </section>
+
+  <div class="remaining-page">
+    <h2 data-aos="fade-up">Becoming a drag racer takes passion, preparation, and persistence. Here’s a step-by-step guide to help you start your journey, whether you're aiming to race at local tracks or dream of going pro:</h2>
+
+    <h3 data-aos="fade-up">Guides To Become A Drag Racer</h3>
+
+    <h3 data-aos="fade-up">1. Understand What Drag Race Is</h3>
+    <p data-aos="fade-up">Drag racing is a straight-line acceleration contest, usually on a ¼ mile (or ⅛ mile) track. Two vehicles race side-by-side from a standing start, aiming to be the first to cross the finish line.</p>
+
+    <h3 data-aos="fade-up">2. Start With Research</h3>
+    <p data-aos="fade-up">Watch drag racing events (NHRA, street outlaws, YouTube). Learn the difference between bracket racing, heads-up racing, and classes (Jr. Dragster, Pro Stock, Top Fuel, etc.). Study the rules and safety requirements.</p>
+
+    <h3 data-aos="fade-up">3. Attend Local Drag Racing Events</h3>
+    <p data-aos="fade-up">Visit a local drag strip to see how it operates. Talk to racers, track officials, and pit crew to get firsthand insights. Ask about "test and tune" nights — casual race nights for beginners.</p>
+
+    <h3 data-aos="fade-up">4. Get Your Driver’s License</h3>
+    <p data-aos="fade-up">You must have a valid driver's license. Some junior programs (like Jr. Dragster) accept younger racers, usually aged 5–17.</p>
+
+    <h3 data-aos="fade-up">5. Join a Sanctioning Body</h3>
+    <p data-aos="fade-up">Depending on your region, you may join NHRA (National Hot Rod Association), IHRA (International Hot Rod Association), or local drag racing clubs. They often require membership to race in official events and provide rulebooks.</p>
+
+    <h3 data-aos="fade-up">6. Choose a Class to Start In</h3>
+    <p data-aos="fade-up">Entry-level classes (affordable and beginner-friendly): Street Legal or Sportsman Class, Jr. Dragster (for kids), Bracket Racing (for consistency, not just speed).</p>
+
+    <h3 data-aos="fade-up">7. Get a Car (or Modify Yours)</h3>
+    <p data-aos="fade-up">You can use a street car for entry-level racing. It must meet track safety requirements (seatbelts, tires, battery hold-down, no leaks, etc.). For faster classes, you’ll need a purpose-built race car with roll cage, fire suit, etc.</p>
+
+    <h3 data-aos="fade-up">8. Get the Required Safety Gear</h3>
+    <p data-aos="fade-up">Helmet (must be Snell approved), Fire jacket or full suit (depending on class), Seat harness, Roll cage (for faster cars), Battery cutoff switch, Fire extinguisher system (advanced levels).</p>
+
+    <h3 data-aos="fade-up">9. Practice at Test & Tune Events</h3>
+    <p data-aos="fade-up">Many tracks host “Test & Tune” nights. Practice launches, reaction times, and tuning your car. Get comfortable with the Christmas Tree light system and track etiquette.</p>
+
+    <h3 data-aos="fade-up">10. Learn Race Strategy & Technique</h3>
+    <p data-aos="fade-up">Understand reaction time, 60-ft times, dial-ins, and bracket racing strategy. Practice launch control, throttle modulation, and shifting.</p>
+
+    <h3 data-aos="fade-up">11. Attend a Drag Racing School (Optional but Recommended)</h3>
+    <p data-aos="fade-up">Great for serious racers. NHRA and other organizations offer courses that include safety training, technique, and licensing tests.</p>
+
+    <h3 data-aos="fade-up">12. Compete in Local Events</h3>
+    <p data-aos="fade-up">Enter bracket races or beginner races at your local track. Focus on consistency and learning, not just speed.</p>
+
+    <h3 data-aos="fade-up">13. Get Your Competition License (For Advanced Classes)</h3>
+    <p data-aos="fade-up">If your car runs faster than a certain time (e.g., 9.99 seconds in the 1/4 mile), you’ll need a competition license. This may involve track evaluation runs and physical exams.</p>
+
+    <h3 data-aos="fade-up">14. Maintain and Upgrade Your Car</h3>
+    <p data-aos="fade-up">Drag racing is as much about tuning as it is driving. Improve suspension, tires, gearing, and engine performance as you progress.</p>
+
+    <h3 data-aos="fade-up">15. Network and Stay Committed</h3>
+    <p data-aos="fade-up">Join forums, local clubs, and drag racing events. Find a mentor or racing team. Keep learning and adjusting to improve your times and skills.</p>
+
+    <div class="line-container"></div>
+  </div>
+
+  <!-- Floating Menu -->
+  <div class="floating-menu">
+    <button id="main-button">Go to</button>
+    <div id="menu-options">
+      <a href="2.html">Guides</a>
+      <a href="7.html">Inspirations</a>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 <span>SpeedZone Guides</span> | Built for racers, by racers.</p>
+  </footer>
+
+  <!-- AOS JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800,
+      once: true
+    });
+
+    const mainButton = document.getElementById("main-button");
+    const floatingMenu = document.querySelector(".floating-menu");
+
+    mainButton.addEventListener("click", () => {
+      floatingMenu.classList.toggle("show");
+    });
+  </script>
+</body>
+</html>
