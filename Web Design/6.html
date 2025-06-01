@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NASCAR Guides</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Open+Sans&display=swap" rel="stylesheet" />
+
+  <!-- AOS Animation CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet" />
+
+  <style>
+    html {
+      margin: 0;
+      background-color: #000;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Open Sans', sans-serif;
+      text-align: center;
+      background-image: url('nascar-84466 (1).jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    .hero-section {
+      margin: 0;
+      padding: 0;
+    }
+
+    .title {
+      margin-top: 20px;
+      font-size: 36px;
+      font-family: 'Audiowide', sans-serif;
+      color: #ff0000;
+    }
+
+    .remaining-page {
+      background-color: rgba(26, 26, 26, 0.85);
+      padding: 60px 20px;
+      color: #ffffff;
+      flex-grow: 1;
+      max-width: 900px;
+      margin: 0 auto;
+      text-align: left;
+    }
+
+    .remaining-page h2 {
+      font-size: 30px;
+      font-family: 'Audiowide', sans-serif;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    h3 {
+      font-family: 'Audiowide', sans-serif;
+      font-size: 22px;
+      color: #ff0000;
+      margin-top: 30px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+      color: #f0f0f0;
+      margin: 10px 0;
+      max-width: 800px;
+    }
+
+    .line-container {
+      position: relative;
+      width: 80%;
+      margin: 30px auto 0 auto;
+      height: 4px;
+      background-color: #ff0000;
+    }
+
+    footer {
+      background-color: #111;
+      color: #ccc;
+      text-align: center;
+      padding: 20px 10px;
+      font-size: 14px;
+      font-family: 'Audiowide', sans-serif;
+      border-top: 2px solid #ff0000;
+    }
+
+    footer span {
+      color: #ff0000;
+      font-weight: bold;
+    }
+
+    @media (max-width: 600px) {
+      h3 {
+        font-size: 18px;
+      }
+
+      p {
+        font-size: 14px;
+      }
+    }
+
+    /* Floating Menu Styles */
+    .floating-menu {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      z-index: 9999;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+    }
+
+    #main-button {
+      background-color: #ff0000;
+      color: white;
+      border: none;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      font-family: 'Audiowide', sans-serif;
+      font-size: 12px;
+      box-shadow: 0 4px 12px rgba(255, 0, 0, 0.4);
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+
+    #main-button:hover {
+      background-color: #cc0000;
+      transform: scale(1.1);
+    }
+
+    #menu-options {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 10px;
+      opacity: 0;
+      transform: translateY(10px);
+      transition: opacity 0.3s ease, transform 0.3s ease;
+      pointer-events: none;
+    }
+
+    #menu-options a {
+      background-color: #ff0000;
+      color: white;
+      padding: 10px 16px;
+      margin-bottom: 8px;
+      border-radius: 25px;
+      font-family: 'Audiowide', sans-serif;
+      font-size: 14px;
+      text-decoration: none;
+      box-shadow: 0 4px 12px rgba(255, 0, 0, 0.4);
+      transition: background-color 0.3s ease;
+    }
+
+    #menu-options a:hover {
+      background-color: #cc0000;
+    }
+
+    .floating-menu.show #menu-options {
+      opacity: 1;
+      transform: translateY(0);
+      pointer-events: auto;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      .title {
+        font-size: 7vw;
+      }
+
+      .remaining-page h2 {
+        font-size: 1.5rem;
+      }
+
+      .remaining-page p {
+        font-size: 0.95rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .hero-section {
+        padding: 10vh 4vw;
+      }
+
+      .title {
+        font-size: 8vw;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <section class="hero-section">
+    <h1 class="title">NASCAR GUIDES FOR YOU</h1>
+  </section>
+
+  <div class="remaining-page">
+    <h2 data-aos="fade-up">Becoming a NASCAR driver is a dream for many motorsport fans, but it takes dedication, skill, and years of preparation. Here’s a detailed step-by-step guide to help you break into the world of NASCAR racing:</h2>
+
+    <h3 data-aos="fade-up">Guides To Become A NASCAR Racer</h3>
+
+    <h3 data-aos="fade-up">🏁 1. Understand What NASCAR Racing Involves</h3>
+    <p data-aos="fade-up">NASCAR (National Association for Stock Car Auto Racing) includes multiple series, with the Cup Series at the top. Races are run on ovals, superspeedways, road courses, and short tracks with high-powered stock cars in intense, high-contact competitions.</p>
+
+    <h3 data-aos="fade-up">🧒 2. Start Racing Young (Optional but Ideal)</h3>
+    <h3 data-aos="fade-up">Most NASCAR drivers start between ages 5–10 in:</h3>
+    <p data-aos="fade-up">* Go-karts</p>
+    <p data-aos="fade-up">* Quarter Midgets</p>
+    <p data-aos="fade-up">* Bandolero cars</p>
+    <p data-aos="fade-up">* These teach control, reflexes, and race awareness.</p>
+
+    <h3 data-aos="fade-up">🏎️ 3. Progress to Legend Cars or Late Models</h3>
+    <p data-aos="fade-up">* Move into Legend Cars or Street Stock at your local track (typically around age 12–16).</p>
+    <p data-aos="fade-up">* After proving your skill, move to Late Model Stock Cars, which resemble real NASCAR vehicles.</p>
+    <p data-aos="fade-up">* These are common stepping stones to professional series.</p>
+
+    <h3 data-aos="fade-up">🏟️ 4. Join a Local Racing League</h3>
+    <p data-aos="fade-up">* Race at local short tracks (asphalt or dirt).</p>
+    <h3 data-aos="fade-up">Compete in divisions like:</h3>
+    <p data-aos="fade-up">* Street Stock</p>
+    <p data-aos="fade-up">* Modifieds</p>
+    <p data-aos="fade-up">* Build your reputation through consistent performance and clean racing.</p>
+
+    <h3 data-aos="fade-up">🧾 5. Get a NASCAR Sanctioned License</h3>
+    <p data-aos="fade-up">* Join a NASCAR Home Track or series like NASCAR Advance Auto Parts Weekly Series.</p>
+    <h3 data-aos="fade-up">Complete a licensing process including:</h3>
+    <p data-aos="fade-up">* Driver history</p>
+    <p data-aos="fade-up">* Physical exam</p>
+    <p data-aos="fade-up">* Proof of experience</p>
+
+    <h3 data-aos="fade-up">🎓 6. Attend a Racing School</h3>
+    <h3 data-aos="fade-up">Recommended schools:</h3>
+    <p data-aos="fade-up">* NASCAR Racing Experience</p>
+    <p data-aos="fade-up">* Richard Petty Driving Experience</p>
+    <h3 data-aos="fade-up">These teach:</h3>
+    <p data-aos="fade-up">* Car control</p>
+    <p data-aos="fade-up">* Pit stops</p>
+    <p data-aos="fade-up">* Race strategy</p>
+
+    <h3 data-aos="fade-up">🎮 7. Practice with Sim Racing</h3>
+    <p data-aos="fade-up">* Platforms like iRacing simulate NASCAR tracks and cars.</p>
+    <p data-aos="fade-up">* NASCAR teams and scouts often use sim racing to discover new talent.</p>
+    <p data-aos="fade-up">* It’s a low-cost way to practice racecraft and strategy.</p>
+
+    <h3 data-aos="fade-up">🔧 8. Build Technical Knowledge</h3>
+    <h3 data-aos="fade-up">* Learn about:</h3>
+    <p data-aos="fade-up">* Car setup</p>
+    <p data-aos="fade-up">* Suspension tuning</p>
+    <p data-aos="fade-up">* Aerodynamics</p>
+    <p data-aos="fade-up">* These require higher licenses and sponsorship backing.</p>
+
+    <h3 data-aos="fade-up">🏁 9. Move Up to ARCA Series or NASCAR Developmental Series</h3>
+    <h3 data-aos="fade-up">Aim to race in:</h3>
+    <p data-aos="fade-up">* ARCA Menards Series (NASCAR’s main feeder series)</p>
+    <p data-aos="fade-up">* NASCAR Trucks (Craftsman Truck Series)</p>
+    <p data-aos="fade-up">* Xfinity Series</p>
+    <p data-aos="fade-up">* HANS (head and neck support device)</p>
+
+    <h3 data-aos="fade-up">💰 10. Secure Sponsorship and Funding</h3>
+    <p data-aos="fade-up">* Racing is expensive — you’ll need financial backing.</p>
+    <h3 data-aos="fade-up">Create a driver portfolio with:</h3>
+    <p data-aos="fade-up">* Bio and photos</p>
+    <p data-aos="fade-up">* Race results</p>
+    <p data-aos="fade-up">* Social media links</p>
+    <p data-aos="fade-up">* Pitch deck for sponsors</p>
+    <p data-aos="fade-up">* Network at tracks and events, and pitch to motorsport-friendly businesses.</p>
+
+    <h3 data-aos="fade-up">🤝 11. Work with a Team or Join a Driver Development Program</h3>
+    <p data-aos="fade-up">* Join a racing team or driver development program (e.g., Joe Gibbs Racing, JR Motorsports).</p>
+    <p data-aos="fade-up">* Many Cup teams scout from ARCA and Truck Series drivers.</p>
+    <p data-aos="fade-up">* Your performance, personality, and professionalism will attract attention.</p>
+
+    <h3 data-aos="fade-up">🏆 12. Compete in the NASCAR Craftsman Truck or Xfinity Series</h3>
+    <p data-aos="fade-up">* These are official national NASCAR series.</p>
+    <p data-aos="fade-up">* Perform well here to catch the eye of Cup Series teams.</p>
+    <p data-aos="fade-up">* Continue training, refining strategy, and earning points.</p>
+
+    <h3 data-aos="fade-up">🏆 13. Enter the NASCAR Cup Series</h3>
+    <h3 data-aos="fade-up">Requires:</h3>
+    <p data-aos="fade-up">* Elite skill</p>
+    <p data-aos="fade-up">* Consistency</p>
+    <p data-aos="fade-up">* Mental and physical endurance</p>
+    <p data-aos="fade-up">* A solid track record from feeder series</p>
+
+    <div class="line-container"></div>
+  </div>
+
+   
+    <div class="line-container"></div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 <span>SpeedZone Guides</span> | Built for racers, by racers.</p>
+  </footer>
+
+  <!-- Floating Menu -->
+  <div class="floating-menu">
+    <button id="main-button">Go to</button>
+    <div id="menu-options">
+      <a href="2.html"> Guides</a>
+      <a href="7.html"> Inspiration</a>
+    </div>
+  </div>
+
+  <!-- AOS Animation JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1200 });
+
+    const mainButton = document.getElementById('main-button');
+    const menuOptions = document.getElementById('menu-options');
+    const floatingMenu = document.querySelector('.floating-menu');
+
+    mainButton.addEventListener('click', () => {
+      floatingMenu.classList.toggle('show');
+    });
+
+    document.addEventListener('click', (e) => {
+      if (!floatingMenu.contains(e.target) && floatingMenu.classList.contains('show')) {
+        floatingMenu.classList.remove('show');
+      }
+    });
+  </script>
+</body>
+</html>
